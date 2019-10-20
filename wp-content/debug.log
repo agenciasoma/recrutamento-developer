@@ -1,0 +1,135 @@
+[20-Oct-2019 02:00:29 UTC] PHP Parse error:  syntax error, unexpected 'get_the_title' (T_STRING) in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 162
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Undefined variable: image in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 7
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 24
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 47
+[20-Oct-2019 02:01:08 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 60
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Undefined variable: image in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 7
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 24
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 47
+[20-Oct-2019 02:01:09 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 60
+[20-Oct-2019 02:16:50 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 169
+[20-Oct-2019 02:18:54 UTC] PHP Parse error:  syntax error, unexpected ')' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 170
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Undefined variable: image in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 7
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 24
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 47
+[20-Oct-2019 02:19:06 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 60
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Undefined variable: image in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 7
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 24
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 47
+[20-Oct-2019 02:19:07 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 60
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Undefined variable: image in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 7
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 24
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 47
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 60
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 825
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Trying to get property of non-object in /var/www/html/projetos/avaliacao/wp-includes/nav-menu.php on line 829
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Undefined variable: image in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/index.php on line 7
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 24
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 47
+[20-Oct-2019 02:19:17 UTC] PHP Notice:  Use of undefined constant ICL_LANGUAGE_CODE - assumed 'ICL_LANGUAGE_CODE' in /var/www/html/projetos/avaliacao/wp-content/themes/somadev-theme/footer.php on line 60
