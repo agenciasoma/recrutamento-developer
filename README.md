@@ -57,7 +57,8 @@ https://github.com/agenciasoma/somadev-theme.git
 10. Com o conteúdo sendo retornado do banco, exiba a informação de acordo com a estrutura html/css já criada no arquivo index.php e disponível na home do tema conforme layout.
 11. Após realizar todas as tarefas acima, crie um DUMP do banco com seu nome e adicione na pasta BD.
 12. Faça o commit e envie o novo branch criado para o repositório no github.
-13. Com tudo finalizado escreva um email para (djalma@somadev.com.br) com poucas linha descrevendo o trabalho que foi realizado.
+13. Com o novo branch enviado faça um Pull Request descrevendo o que foi realizado.
+14. Com tudo finalizado escreva um email para (djalma@somadev.com.br) com poucas linha descrevendo o trabalho que foi executado.
 
 ## Agradecimento
 
