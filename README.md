@@ -15,7 +15,7 @@ Será necessário que o candidato esteja confortável com os seguintes conhecime
 
 1. Interpretação de texto;
 2. Capacidade de descrever, por escrito, uma sequência de passos para a obtenção de um resultado;
-3. Estruturar e configurar WordKflow para início do trabalho utilizando GIT, SQL, Apache, PHP e WordPress.
+3. Estruturar e configurar Workflow para início do trabalho utilizando GIT, SQL, Apache, PHP e WordPress.
 4. Conhecimentos na linguagem de programação PHP/WordPress que o permita:
 	* Escrever um de código PHP/WordPress e entender o que ele faz;
 	* Implementar um Query que retorne conteúdo de acordo com as especificações;
@@ -50,7 +50,7 @@ Senha: recrutamento
 git@github.com:agenciasoma/somadev-theme.git
 ```
 8. Com o WordPress e o Tema instalado ative as URLs amigáveis utilizando o arquivo .htaccess
-9. Depois do WordFlow rodando crie uma Query na home do site onde:
+9. Depois do WorkFlow rodando crie uma Query na home do site onde:
 * Retorne os posts da categoria BLOG
 * Apenas os Posts que foram publicados entre a data 10/09/2019 até 20/09/2019
 * Que esteja setado o campo personalizado "status" como "free"
