@@ -32,7 +32,7 @@ Siga as etapas abaixo para realizar a avaliação e chegar no objetivo final.
 
 ```
 
-https://github.com/agenciasoma/recrutamento-developer.git
+git@github.com:agenciasoma/recrutamento-developer.git
 
 ```
 
@@ -47,7 +47,7 @@ Senha: recrutamento
 ```
 7. Realize o clone(link abaixo) e a instalação do tema.
 ```
-https://github.com/agenciasoma/somadev-theme.git
+git@github.com:agenciasoma/somadev-theme.git
 ```
 8. Com o WordPress e o Tema instalado ative as URLs amigáveis utilizando o arquivo .htaccess
 9. Depois do WordFlow rodando crie uma Query na home do site onde:
