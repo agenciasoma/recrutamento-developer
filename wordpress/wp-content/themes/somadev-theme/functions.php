@@ -92,3 +92,43 @@ function add_cpt_to_pll( $post_types, $is_settings ) {
     }
     return $post_types;
 }
+
+function showHello(){
+    echo '<p>HELLO !!!</p>';
+}
+
+function getBlogPosts(){
+    $args = array(
+        'post_type'=> 'post',
+        'orderby'    => 'date',			
+        'order'    => 'DESC',
+        'date_query' => array(
+            array(
+                'after'     => array(
+                    'year'  => 2019,
+                    'month' => 9,
+                    'day'   => 10,
+                ),
+                'before'    => array(
+                    'year'  => 2019,
+                    'month' => 9,
+                    'day'   => 20,
+                ),
+                'inclusive' => true,
+            )),
+            'tax_query' => array(
+                array(
+                'taxonomy' => 'category',
+                'field' => 'term_taxonomy_id',
+                'terms' => 8
+                 )
+            ),
+            'meta_value' => 'free',
+        'posts_per_page' => -1 
+    );
+
+    $result = new WP_Query( $args );
+    $posts = get_posts($args);
+
+    return $posts;
+}
