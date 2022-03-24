@@ -33,7 +33,7 @@ Será necessário que o candidato esteja confortável com os seguintes conhecime
 
 Siga as etapas abaixo para realizar a avaliação e chegar ao objetivo final.
 
-1. Em seu ambiente de desenvolvimento, crie um diretório chamado "avaliacao" e realize o clone do projeto.
+1. Em seu ambiente de desenvolvimento, crie um diretório chamado "avaliacao" faça um fork deste repositório e realize o clone do projeto.
 ```
 git clone git@github.com:agenciasoma/recrutamento-developer.git
 ```
