@@ -55,7 +55,7 @@ Senha: recrutamento
 10. Com o conteúdo sendo retornado do banco, exiba a informação de acordo com a estrutura html/css já criada no arquivo index.php e disponível na home do tema conforme [layout](https://prnt.sc/A4I5ItEbpZ0b);
 11. Após realizar todas as tarefas acima, crie um DUMP do banco de dados com seu nome e adicione na pasta BD.
 12. Faça o commit e envie o novo branch criado para o repositório no github.
-13. Com o novo branch enviado faça um Pull Request descrevendo o que foi realizado. Para mais dicas sobre como criar o pull request acesse [este link] (https://juliobitencourt.dev/como-criar-um-pull-request-perfeito/)
+13. Com o novo branch enviado faça um Pull Request descrevendo o que foi realizado. Para mais dicas sobre como criar o pull request acesse [este link](https://juliobitencourt.dev/como-criar-um-pull-request-perfeito/)
 
 ## Agradecimentos
 
