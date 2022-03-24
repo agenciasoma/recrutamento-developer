@@ -39,14 +39,14 @@ git clone git@github.com:agenciasoma/recrutamento-developer.git
 ```
 2. Crie uma nova branch com seu nome para iniciar os trabalhos;
 3. Realize o download do WordPress e adicione no diretório criado;
-4. Após realizar o download do WordPress crie um banco de dados MySQL, importe o DUMP que se encontra na pasta *BD* e configure o WordPress para se conectar ao banco de dados;
+4. Após realizar o download do WordPress crie um banco de dados MySQL, importe o DUMP que se encontra na pasta *BD*;
 5. Com o banco de dados criado e importado, realize a instalação do WordPress com o banco de dados importado;
 6. Utilize o usuário abaixo para se autenticar no painel administrativo do WordPress:
 ```
 Usuário: suporte
 Senha: recrutamento
 ```
-7. Faça o [download do tema](https://github.com/agenciasoma/somadev-theme) que será usado no projeto através do link abaixo. Depois faça a ativação do tema;
+7. Faça o [download do tema](https://github.com/agenciasoma/somadev-theme) que será usado no projeto. Depois faça a ativação do tema;
 8. Verifique se o tema está sendo exibido corretamente acessando o projeto no navegador;
 9. Depois que o projeto estiver sendo executado corretamente crie uma Query na home do site onde:
     - Retorne os posts da categoria BLOG
@@ -56,7 +56,6 @@ Senha: recrutamento
 11. Após realizar todas as tarefas acima, crie um DUMP do banco de dados com seu nome e adicione na pasta BD.
 12. Faça o commit e envie o novo branch criado para o repositório no github.
 13. Com o novo branch enviado faça um Pull Request descrevendo o que foi realizado. Para mais dicas sobre como criar o pull request acesse [este link] (https://juliobitencourt.dev/como-criar-um-pull-request-perfeito/)
-14. Com tudo finalizado envie um email para (atendimento@somadev.com.br) e informe que o teste foi concluído.
 
 ## Agradecimentos
 
