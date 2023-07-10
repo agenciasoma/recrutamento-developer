@@ -1,0 +1,11 @@
+*index.php
+*.DS_Store
+xmlrpc.php
+readme.html
+license.txt
+/wp-*.php
+wp-admin/
+wp-includes/
+wp-content/*/*
+!wp-content/themes/somadev-theme-master/
+!wp-content/themes/somadev-theme-master/index.php
