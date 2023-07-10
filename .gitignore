@@ -9,3 +9,4 @@ wp-includes/
 wp-content/*/*
 !wp-content/themes/recrutamento-developer/
 !wp-content/themes/recrutamento-developer/index.php
+!/index.php
