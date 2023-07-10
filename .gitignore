@@ -7,5 +7,5 @@ license.txt
 wp-admin/
 wp-includes/
 wp-content/*/*
-!wp-content/themes/somadev-theme-master/
-!wp-content/themes/somadev-theme-master/index.php
+!wp-content/themes/recrutamento-developer/
+!wp-content/themes/recrutamento-developer/index.php
