@@ -26,7 +26,7 @@ $botao = 'Continue lendo';
 										<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" title="Blanditiis velit esse cumque minima consequatur">Blanditiis velit esse cumque minima consequatur</a>
 									</h2>
 									<div class="text-mobile">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dol...</p>
+										<p>oiiiiii Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dol...</p>
 									</div>
 									<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" class="link-more" title="Continue lendo Blanditiis velit esse cumque minima consequatur">Continue lendo</a>
 								</div>
