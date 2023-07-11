@@ -15,11 +15,11 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Copiando estrutura do banco de dados para dump
-CREATE DATABASE IF NOT EXISTS `dump` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `dump`;
+-- Copiando estrutura do banco de dados para avaliacao
+CREATE DATABASE IF NOT EXISTS `avaliacao` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `avaliacao`;
 
--- Copiando estrutura para tabela dump.egddy_aiowps_events
+-- Copiando estrutura para tabela avaliacao.egddy_aiowps_events
 CREATE TABLE IF NOT EXISTS `egddy_aiowps_events` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `event_type` varchar(150) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -34,9 +34,9 @@ CREATE TABLE IF NOT EXISTS `egddy_aiowps_events` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_aiowps_events: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_aiowps_events: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_aiowps_failed_logins
+-- Copiando estrutura para tabela avaliacao.egddy_aiowps_failed_logins
 CREATE TABLE IF NOT EXISTS `egddy_aiowps_failed_logins` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `user_id` bigint NOT NULL,
@@ -46,9 +46,9 @@ CREATE TABLE IF NOT EXISTS `egddy_aiowps_failed_logins` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_aiowps_failed_logins: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_aiowps_failed_logins: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_aiowps_global_meta
+-- Copiando estrutura para tabela avaliacao.egddy_aiowps_global_meta
 CREATE TABLE IF NOT EXISTS `egddy_aiowps_global_meta` (
   `meta_id` bigint NOT NULL AUTO_INCREMENT,
   `date_time` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
@@ -65,9 +65,9 @@ CREATE TABLE IF NOT EXISTS `egddy_aiowps_global_meta` (
   PRIMARY KEY (`meta_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_aiowps_global_meta: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_aiowps_global_meta: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_aiowps_login_activity
+-- Copiando estrutura para tabela avaliacao.egddy_aiowps_login_activity
 CREATE TABLE IF NOT EXISTS `egddy_aiowps_login_activity` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `user_id` bigint NOT NULL,
@@ -80,12 +80,12 @@ CREATE TABLE IF NOT EXISTS `egddy_aiowps_login_activity` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_aiowps_login_activity: ~2 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_aiowps_login_activity: ~2 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_aiowps_login_activity` (`id`, `user_id`, `user_login`, `login_date`, `logout_date`, `login_ip`, `login_country`, `browser_type`) VALUES
 	(1, 1, 'suporte', '2019-03-27 17:48:27', '0000-00-00 00:00:00', '192.168.1.36', '', ''),
 	(2, 1, 'suporte', '2019-03-28 09:26:20', '0000-00-00 00:00:00', '192.168.1.36', '', '');
 
--- Copiando estrutura para tabela dump.egddy_aiowps_login_lockdown
+-- Copiando estrutura para tabela avaliacao.egddy_aiowps_login_lockdown
 CREATE TABLE IF NOT EXISTS `egddy_aiowps_login_lockdown` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `user_id` bigint NOT NULL,
@@ -98,9 +98,9 @@ CREATE TABLE IF NOT EXISTS `egddy_aiowps_login_lockdown` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_aiowps_login_lockdown: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_aiowps_login_lockdown: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_aiowps_permanent_block
+-- Copiando estrutura para tabela avaliacao.egddy_aiowps_permanent_block
 CREATE TABLE IF NOT EXISTS `egddy_aiowps_permanent_block` (
   `id` bigint NOT NULL AUTO_INCREMENT,
   `blocked_ip` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -111,18 +111,18 @@ CREATE TABLE IF NOT EXISTS `egddy_aiowps_permanent_block` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_aiowps_permanent_block: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_aiowps_permanent_block: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_cf7_data
+-- Copiando estrutura para tabela avaliacao.egddy_cf7_data
 CREATE TABLE IF NOT EXISTS `egddy_cf7_data` (
   `id` int NOT NULL AUTO_INCREMENT,
   `created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_cf7_data: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_cf7_data: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_cf7_data_entry
+-- Copiando estrutura para tabela avaliacao.egddy_cf7_data_entry
 CREATE TABLE IF NOT EXISTS `egddy_cf7_data_entry` (
   `id` int NOT NULL AUTO_INCREMENT,
   `cf7_id` int NOT NULL,
@@ -132,9 +132,9 @@ CREATE TABLE IF NOT EXISTS `egddy_cf7_data_entry` (
   UNIQUE KEY `id` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_cf7_data_entry: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_cf7_data_entry: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_commentmeta
+-- Copiando estrutura para tabela avaliacao.egddy_commentmeta
 CREATE TABLE IF NOT EXISTS `egddy_commentmeta` (
   `meta_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `comment_id` bigint unsigned NOT NULL DEFAULT '0',
@@ -145,9 +145,9 @@ CREATE TABLE IF NOT EXISTS `egddy_commentmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_commentmeta: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_commentmeta: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_comments
+-- Copiando estrutura para tabela avaliacao.egddy_comments
 CREATE TABLE IF NOT EXISTS `egddy_comments` (
   `comment_ID` bigint unsigned NOT NULL AUTO_INCREMENT,
   `comment_post_ID` bigint unsigned NOT NULL DEFAULT '0',
@@ -172,9 +172,9 @@ CREATE TABLE IF NOT EXISTS `egddy_comments` (
   KEY `comment_author_email` (`comment_author_email`(10))
 ) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_comments: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_comments: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_links
+-- Copiando estrutura para tabela avaliacao.egddy_links
 CREATE TABLE IF NOT EXISTS `egddy_links` (
   `link_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `link_url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -193,9 +193,9 @@ CREATE TABLE IF NOT EXISTS `egddy_links` (
   KEY `link_visible` (`link_visible`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_links: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_links: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_options
+-- Copiando estrutura para tabela avaliacao.egddy_options
 CREATE TABLE IF NOT EXISTS `egddy_options` (
   `option_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `option_name` varchar(191) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -206,7 +206,7 @@ CREATE TABLE IF NOT EXISTS `egddy_options` (
   KEY `autoload` (`autoload`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4580 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_options: ~9 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_options: ~5 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_options` (`option_id`, `option_name`, `option_value`, `autoload`) VALUES
 	(1, 'siteurl', 'http://avaliacao.test', 'yes'),
 	(2, 'home', 'http://avaliacao.test', 'yes'),
@@ -451,7 +451,7 @@ INSERT IGNORE INTO `egddy_options` (`option_id`, `option_name`, `option_value`, 
 	(4577, '_site_transient_timeout_theme_roots', '1648047625', 'no'),
 	(4578, '_site_transient_theme_roots', 'a:3:{s:12:"twentytwenty";s:7:"/themes";s:15:"twentytwentyone";s:7:"/themes";s:15:"twentytwentytwo";s:7:"/themes";}', 'no');
 
--- Copiando estrutura para tabela dump.egddy_pmxi_files
+-- Copiando estrutura para tabela avaliacao.egddy_pmxi_files
 CREATE TABLE IF NOT EXISTS `egddy_pmxi_files` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `import_id` bigint unsigned NOT NULL,
@@ -461,11 +461,11 @@ CREATE TABLE IF NOT EXISTS `egddy_pmxi_files` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_pmxi_files: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_pmxi_files: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_pmxi_files` (`id`, `import_id`, `name`, `path`, `registered_on`) VALUES
 	(1, 1, 'frepesp.wordpress.2019_06_04.xml', '/wpallimport/uploads/6be2a2b3bc9d61e1a266069d36b9ff90/frepesp.wordpress.2019_06_04.xml', '2019-06-04 15:32:09');
 
--- Copiando estrutura para tabela dump.egddy_pmxi_history
+-- Copiando estrutura para tabela avaliacao.egddy_pmxi_history
 CREATE TABLE IF NOT EXISTS `egddy_pmxi_history` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `import_id` bigint unsigned NOT NULL,
@@ -476,11 +476,11 @@ CREATE TABLE IF NOT EXISTS `egddy_pmxi_history` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_pmxi_history: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_pmxi_history: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_pmxi_history` (`id`, `import_id`, `type`, `time_run`, `date`, `summary`) VALUES
 	(1, 1, 'manual', '5', '2019-06-04 15:32:09', '0 PortfÃ³lios created 0 updated 0 deleted 59 skipped');
 
--- Copiando estrutura para tabela dump.egddy_pmxi_images
+-- Copiando estrutura para tabela avaliacao.egddy_pmxi_images
 CREATE TABLE IF NOT EXISTS `egddy_pmxi_images` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `attachment_id` bigint unsigned NOT NULL,
@@ -489,7 +489,7 @@ CREATE TABLE IF NOT EXISTS `egddy_pmxi_images` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=460 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_pmxi_images: ~458 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_pmxi_images: ~458 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_pmxi_images` (`id`, `attachment_id`, `image_url`, `image_filename`) VALUES
 	(1, 6392, '', '20170412_130041.jpg'),
 	(2, 6393, '', 'foto1-e1560349521128.jpg'),
@@ -950,7 +950,7 @@ INSERT IGNORE INTO `egddy_pmxi_images` (`id`, `attachment_id`, `image_url`, `ima
 	(458, 6869, '', '22054311_1559320307421634_1405056203_n.jpg'),
 	(459, 6870, '', '22054386_1559320287421636_1500063828_n1.jpg');
 
--- Copiando estrutura para tabela dump.egddy_pmxi_imports
+-- Copiando estrutura para tabela avaliacao.egddy_pmxi_imports
 CREATE TABLE IF NOT EXISTS `egddy_pmxi_imports` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `parent_import_id` bigint NOT NULL DEFAULT '0',
@@ -984,11 +984,11 @@ CREATE TABLE IF NOT EXISTS `egddy_pmxi_imports` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_pmxi_imports: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_pmxi_imports: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_pmxi_imports` (`id`, `parent_import_id`, `name`, `friendly_name`, `type`, `feed_type`, `path`, `xpath`, `options`, `registered_on`, `root_element`, `processing`, `executing`, `triggered`, `queue_chunk_number`, `first_import`, `count`, `imported`, `created`, `updated`, `skipped`, `deleted`, `canceled`, `canceled_on`, `failed`, `failed_on`, `settings_update_on`, `last_activity`, `iteration`) VALUES
 	(1, 0, 'frepesp.wordpress.2019_06_04.xml', '', 'upload', '', '/wpallimport/uploads/6be2a2b3bc9d61e1a266069d36b9ff90/frepesp.wordpress.2019_06_04.xml', '/item', 'a:160:{s:4:"type";s:4:"post";s:21:"is_override_post_type";i:0;s:15:"post_type_xpath";s:0:"";s:8:"deligate";s:0:"";s:11:"wizard_type";s:3:"new";s:11:"custom_type";s:9:"portfolio";s:14:"featured_delim";s:1:",";s:10:"atch_delim";s:1:",";s:25:"is_search_existing_attach";s:1:"0";s:15:"post_taxonomies";a:1:{s:19:"categoria-portfolio";s:154:"[{"item_id":"1","left":2,"right":5,"parent_id":null,"xpath":"","assign":true},{"item_id":"2","left":3,"right":4,"parent_id":"1","xpath":"","assign":true}]";}s:6:"parent";i:0;s:23:"is_multiple_page_parent";s:3:"yes";s:18:"single_page_parent";s:0:"";s:5:"order";s:1:"0";s:6:"status";s:7:"publish";s:13:"page_template";s:7:"default";s:25:"is_multiple_page_template";s:3:"yes";s:20:"single_page_template";s:0:"";s:15:"page_taxonomies";a:0:{}s:9:"date_type";s:8:"specific";s:4:"date";s:3:"now";s:10:"date_start";s:3:"now";s:8:"date_end";s:3:"now";s:11:"custom_name";a:0:{}s:12:"custom_value";a:0:{}s:13:"custom_format";a:2:{i:0;s:1:"0";i:1;s:1:"0";}s:14:"custom_mapping";a:0:{}s:17:"serialized_values";a:2:{i:0;s:7:"["",""]";i:1;s:7:"["",""]";}s:20:"custom_mapping_rules";a:2:{i:0;s:2:"[]";i:1;s:2:"[]";}s:14:"comment_status";s:4:"open";s:20:"comment_status_xpath";s:0:"";s:11:"ping_status";s:4:"open";s:17:"ping_status_xpath";s:0:"";s:12:"create_draft";s:3:"yes";s:6:"author";s:0:"";s:12:"post_excerpt";s:0:"";s:9:"post_slug";s:0:"";s:11:"attachments";s:0:"";s:19:"is_import_specified";s:1:"0";s:16:"import_specified";s:0:"";s:16:"is_delete_source";i:0;s:8:"is_cloak";i:0;s:10:"unique_key";s:11:"- {guid[1]}";s:14:"tmp_unique_key";s:11:"- {guid[1]}";s:9:"feed_type";s:4:"auto";s:22:"search_existing_images";s:1:"1";s:18:"create_new_records";s:1:"1";s:17:"is_delete_missing";s:1:"0";s:20:"set_missing_to_draft";s:1:"0";s:20:"is_update_missing_cf";s:1:"0";s:22:"update_missing_cf_name";s:0:"";s:23:"update_missing_cf_value";s:0:"";s:20:"is_keep_former_posts";s:2:"no";s:16:"is_update_status";s:1:"1";s:17:"is_update_content";s:1:"1";s:15:"is_update_title";s:1:"1";s:14:"is_update_slug";s:1:"1";s:17:"is_update_excerpt";s:1:"1";s:20:"is_update_categories";s:1:"1";s:16:"is_update_author";s:1:"1";s:24:"is_update_comment_status";s:1:"1";s:19:"is_update_post_type";s:1:"1";s:23:"update_categories_logic";s:11:"full_update";s:15:"taxonomies_list";s:1:"0";s:20:"taxonomies_only_list";s:0:"";s:22:"taxonomies_except_list";s:0:"";s:21:"is_update_attachments";s:1:"1";s:16:"is_update_images";s:1:"1";s:19:"update_images_logic";s:11:"full_update";s:15:"is_update_dates";s:1:"1";s:20:"is_update_menu_order";s:1:"1";s:16:"is_update_parent";s:1:"1";s:19:"is_keep_attachments";s:1:"0";s:12:"is_keep_imgs";s:1:"0";s:20:"do_not_remove_images";s:1:"1";s:23:"is_update_custom_fields";s:1:"1";s:26:"update_custom_fields_logic";s:11:"full_update";s:18:"custom_fields_list";s:1:"0";s:23:"custom_fields_only_list";s:0:"";s:25:"custom_fields_except_list";s:0:"";s:18:"duplicate_matching";s:4:"auto";s:19:"duplicate_indicator";s:5:"title";s:21:"custom_duplicate_name";s:0:"";s:22:"custom_duplicate_value";s:0:"";s:18:"is_update_previous";i:0;s:12:"is_scheduled";s:0:"";s:16:"scheduled_period";s:0:"";s:13:"friendly_name";s:0:"";s:19:"records_per_request";s:2:"20";s:18:"auto_rename_images";s:1:"0";s:25:"auto_rename_images_suffix";s:0:"";s:11:"images_name";s:8:"filename";s:11:"post_format";s:8:"standard";s:17:"post_format_xpath";s:0:"";s:8:"encoding";s:5:"UTF-8";s:9:"delimiter";b:0;s:16:"image_meta_title";s:0:"";s:22:"image_meta_title_delim";s:1:",";s:18:"image_meta_caption";s:0:"";s:24:"image_meta_caption_delim";s:1:",";s:14:"image_meta_alt";s:0:"";s:20:"image_meta_alt_delim";s:1:",";s:22:"image_meta_description";s:0:"";s:28:"image_meta_description_delim";s:1:",";s:34:"image_meta_description_delim_logic";s:8:"separate";s:12:"status_xpath";s:0:"";s:15:"download_images";s:3:"yes";s:17:"converted_options";s:1:"1";s:15:"update_all_data";s:3:"yes";s:12:"is_fast_mode";s:1:"0";s:9:"chuncking";s:1:"1";s:17:"import_processing";s:4:"ajax";s:16:"save_template_as";s:1:"0";s:5:"title";s:0:"";s:7:"content";s:0:"";s:4:"name";s:0:"";s:18:"is_keep_linebreaks";s:1:"1";s:13:"is_leave_html";s:1:"0";s:14:"fix_characters";i:0;s:9:"pid_xpath";s:0:"";s:14:"featured_image";s:0:"";s:23:"download_featured_image";s:0:"";s:23:"download_featured_delim";s:1:",";s:22:"gallery_featured_image";s:0:"";s:22:"gallery_featured_delim";s:1:",";s:11:"is_featured";s:1:"1";s:17:"is_featured_xpath";s:0:"";s:20:"set_image_meta_title";s:1:"0";s:22:"set_image_meta_caption";s:1:"0";s:18:"set_image_meta_alt";s:1:"0";s:26:"set_image_meta_description";s:1:"0";s:18:"auto_set_extension";s:1:"0";s:13:"new_extension";s:0:"";s:9:"tax_logic";a:2:{s:8:"language";s:6:"single";s:19:"categoria-portfolio";s:6:"single";}s:10:"tax_assing";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:11:"term_assing";a:2:{s:8:"language";s:1:"1";s:19:"categoria-portfolio";s:1:"1";}s:20:"multiple_term_assing";a:2:{s:8:"language";s:1:"1";s:19:"categoria-portfolio";s:1:"1";}s:23:"tax_hierarchical_assing";a:1:{s:19:"categoria-portfolio";a:2:{i:0;s:1:"1";s:6:"NUMBER";s:1:"1";}}s:34:"tax_hierarchical_last_level_assign";a:1:{s:19:"categoria-portfolio";s:1:"0";}s:16:"tax_single_xpath";a:2:{s:8:"language";s:0:"";s:19:"categoria-portfolio";s:0:"";}s:18:"tax_multiple_xpath";a:2:{s:8:"language";s:0:"";s:19:"categoria-portfolio";s:0:"";}s:22:"tax_hierarchical_xpath";a:1:{s:19:"categoria-portfolio";a:2:{i:0;s:0:"";i:1;s:0:"";}}s:18:"tax_multiple_delim";a:2:{s:8:"language";s:1:",";s:19:"categoria-portfolio";s:1:",";}s:22:"tax_hierarchical_delim";a:1:{s:19:"categoria-portfolio";s:1:">";}s:25:"tax_manualhierarchy_delim";a:1:{s:19:"categoria-portfolio";s:1:",";}s:29:"tax_hierarchical_logic_entire";a:1:{s:19:"categoria-portfolio";s:1:"0";}s:29:"tax_hierarchical_logic_manual";a:1:{s:19:"categoria-portfolio";s:1:"0";}s:18:"tax_enable_mapping";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:25:"tax_is_full_search_single";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:27:"tax_is_full_search_multiple";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:29:"tax_assign_to_one_term_single";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:31:"tax_assign_to_one_term_multiple";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:11:"tax_mapping";a:2:{s:8:"language";s:2:"[]";s:19:"categoria-portfolio";s:2:"[]";}s:17:"tax_logic_mapping";a:2:{s:8:"language";s:1:"0";s:19:"categoria-portfolio";s:1:"0";}s:31:"is_tax_hierarchical_group_delim";a:1:{s:19:"categoria-portfolio";s:1:"0";}s:28:"tax_hierarchical_group_delim";a:1:{s:19:"categoria-portfolio";s:1:"|";}s:12:"nested_files";a:0:{}s:17:"xml_reader_engine";s:1:"0";s:15:"import_img_tags";s:1:"0";s:28:"search_existing_images_logic";s:6:"by_url";}', '2019-06-04 15:32:14', 'item', 0, 0, 0, 0, '2019-06-04 18:23:16', 59, 0, 0, 0, 59, 0, 0, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', '2019-06-04 15:32:13', 1);
 
--- Copiando estrutura para tabela dump.egddy_pmxi_posts
+-- Copiando estrutura para tabela avaliacao.egddy_pmxi_posts
 CREATE TABLE IF NOT EXISTS `egddy_pmxi_posts` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint unsigned NOT NULL,
@@ -1000,9 +1000,9 @@ CREATE TABLE IF NOT EXISTS `egddy_pmxi_posts` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_pmxi_posts: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_pmxi_posts: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_pmxi_templates
+-- Copiando estrutura para tabela avaliacao.egddy_pmxi_templates
 CREATE TABLE IF NOT EXISTS `egddy_pmxi_templates` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `options` longtext CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci,
@@ -1017,9 +1017,9 @@ CREATE TABLE IF NOT EXISTS `egddy_pmxi_templates` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_pmxi_templates: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_pmxi_templates: ~0 rows (aproximadamente)
 
--- Copiando estrutura para tabela dump.egddy_postmeta
+-- Copiando estrutura para tabela avaliacao.egddy_postmeta
 CREATE TABLE IF NOT EXISTS `egddy_postmeta` (
   `meta_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `post_id` bigint unsigned NOT NULL DEFAULT '0',
@@ -1030,7 +1030,7 @@ CREATE TABLE IF NOT EXISTS `egddy_postmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=3572 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_postmeta: ~878 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_postmeta: ~878 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_value`) VALUES
 	(2, 3, '_wp_page_template', 'default'),
 	(3, 5, '_edit_lock', '1554057508:1'),
@@ -1911,7 +1911,7 @@ INSERT IGNORE INTO `egddy_postmeta` (`meta_id`, `post_id`, `meta_key`, `meta_val
 	(3570, 6892, '_pingme', '1'),
 	(3571, 6892, '_encloseme', '1');
 
--- Copiando estrutura para tabela dump.egddy_posts
+-- Copiando estrutura para tabela avaliacao.egddy_posts
 CREATE TABLE IF NOT EXISTS `egddy_posts` (
   `ID` bigint unsigned NOT NULL AUTO_INCREMENT,
   `post_author` bigint unsigned NOT NULL DEFAULT '0',
@@ -1943,7 +1943,7 @@ CREATE TABLE IF NOT EXISTS `egddy_posts` (
   KEY `post_author` (`post_author`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6896 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_posts: ~147 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_posts: ~147 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_posts` (`ID`, `post_author`, `post_date`, `post_date_gmt`, `post_content`, `post_title`, `post_excerpt`, `post_status`, `comment_status`, `ping_status`, `post_password`, `post_name`, `to_ping`, `pinged`, `post_modified`, `post_modified_gmt`, `post_content_filtered`, `post_parent`, `guid`, `menu_order`, `post_type`, `post_mime_type`, `comment_count`) VALUES
 	(3, 1, '2019-02-12 16:25:14', '2019-02-12 18:25:14', '<!-- wp:heading --><h2>Quem somos</h2><!-- /wp:heading --><!-- wp:paragraph --><p>O endereÃ§o do nosso site Ã©: http://avaliacao.test.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Quais dados pessoais coletamos e porque</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>ComentÃ¡rios</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Quando os visitantes deixam comentÃ¡rios no site, coletamos os dados mostrados no formulÃ¡rio de comentÃ¡rios, alÃ©m do endereÃ§o de IP e de dados do navegador do visitante, para auxiliar na detecÃ§Ã£o de spam.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Uma sequÃªncia anonimizada de caracteres criada a partir do seu e-mail (tambÃ©m chamada de hash) poderÃ¡ ser enviada para o Gravatar para verificar se vocÃª usa o serviÃ§o. A polÃ­tica de privacidade do Gravatar estÃ¡ disponÃ­vel aqui: https://automattic.com/privacy/. Depois da aprovaÃ§Ã£o do seu comentÃ¡rio, a foto do seu perfil fica visÃ­vel publicamente junto de seu comentÃ¡rio.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>MÃ­dia</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Se vocÃª envia imagens para o site, evite enviar as que contenham dados de localizaÃ§Ã£o incorporados (EXIF GPS). Visitantes podem baixar estas imagens do site e extrair delas seus dados de localizaÃ§Ã£o.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>FormulÃ¡rios de contato</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Cookies</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Ao deixar um comentÃ¡rio no site, vocÃª poderÃ¡ optar por salvar seu nome, e-mail e site nos cookies. Isso visa seu conforto, assim vocÃª nÃ£o precisarÃ¡ preencher seus  dados novamente quando fizer outro comentÃ¡rio. Estes cookies duram um ano.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se vocÃª tem uma conta e acessa este site, um cookie temporÃ¡rio serÃ¡ criado para determinar se seu navegador aceita cookies. Ele nÃ£o contÃ©m nenhum dado pessoal e serÃ¡ descartado quando vocÃª fechar seu navegador.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Quando vocÃª acessa sua conta no site, tambÃ©m criamos vÃ¡rios cookies para salvar os dados da sua conta e suas escolhas de exibiÃ§Ã£o de tela. Cookies de login sÃ£o mantidos por dois dias e cookies de opÃ§Ãµes de tela por um ano. Se vocÃª selecionar &quot;Lembrar-me&quot;, seu acesso serÃ¡ mantido por duas semanas. Se vocÃª se desconectar da sua conta, os cookies de login serÃ£o removidos.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Se vocÃª editar ou publicar um artigo, um cookie adicional serÃ¡ salvo no seu navegador. Este cookie nÃ£o inclui nenhum dado pessoal e simplesmente indica o ID do post referente ao artigo que vocÃª acabou de editar. Ele expira depois de 1 dia.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>MÃ­dia incorporada de outros sites</h3><!-- /wp:heading --><!-- wp:paragraph --><p>Artigos neste site podem incluir conteÃºdo incorporado como, por exemplo, vÃ­deos, imagens, artigos, etc. ConteÃºdos incorporados de outros sites se comportam exatamente da mesma forma como se o visitante estivesse visitando o outro site.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Estes sites podem coletar dados sobre vocÃª, usar cookies, incorporar rastreamento adicional de terceiros e monitorar sua interaÃ§Ã£o com este conteÃºdo incorporado, incluindo sua interaÃ§Ã£o com o conteÃºdo incorporado se vocÃª tem uma conta e estÃ¡ conectado com o site.</p><!-- /wp:paragraph --><!-- wp:heading {"level":3} --><h3>AnÃ¡lises</h3><!-- /wp:heading --><!-- wp:heading --><h2>Com quem partilhamos seus dados</h2><!-- /wp:heading --><!-- wp:heading --><h2>Por quanto tempo mantemos os seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Se vocÃª deixar um comentÃ¡rio, o comentÃ¡rio e os seus metadados sÃ£o conservados indefinidamente. Fazemos isso para que seja possÃ­vel reconhecer e aprovar automaticamente qualquer comentÃ¡rio posterior ao invÃ©s de retÃª-lo para moderaÃ§Ã£o.</p><!-- /wp:paragraph --><!-- wp:paragraph --><p>Para usuÃ¡rios que se registram no nosso site (se houver), tambÃ©m guardamos as informaÃ§Ãµes pessoais que fornecem no seu perfil de usuÃ¡rio. Todos os usuÃ¡rios podem ver, editar ou excluir suas informaÃ§Ãµes pessoais a qualquer momento (sÃ³ nÃ£o Ã© possÃ­vel alterar o seu username). Os administradores de sites tambÃ©m podem ver e editar estas informaÃ§Ãµes.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Quais os seus direitos sobre seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p>Se vocÃª tiver uma conta neste site ou se tiver deixado comentÃ¡rios, pode solicitar um arquivo exportado dos dados pessoais que mantemos sobre vocÃª, inclusive quaisquer dados que nos tenha fornecido. TambÃ©m pode solicitar que removamos qualquer dado pessoal que mantemos sobre vocÃª. Isto nÃ£o inclui nenhuns dados que somos obrigados a manter para propÃ³sitos administrativos, legais ou de seguranÃ§a.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Para onde enviamos seus dados</h2><!-- /wp:heading --><!-- wp:paragraph --><p>ComentÃ¡rios de visitantes podem ser marcados por um serviÃ§o automÃ¡tico de detecÃ§Ã£o de spam.</p><!-- /wp:paragraph --><!-- wp:heading --><h2>Suas informaÃ§Ãµes de contato</h2><!-- /wp:heading --><!-- wp:heading --><h2>InformaÃ§Ãµes adicionais</h2><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Como protegemos seus dados</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Quais sÃ£o nossos procedimentos contra violaÃ§Ã£o de dados</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>De quais terceiros nÃ³s recebemos dados</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Quais tomadas de decisÃ£o ou anÃ¡lises de perfil automatizadas fazemos com os dados de usuÃ¡rios</h3><!-- /wp:heading --><!-- wp:heading {"level":3} --><h3>Requisitos obrigatÃ³rios de divulgaÃ§Ã£o para sua categoria profissional</h3><!-- /wp:heading -->', 'PolÃ­tica de privacidade', '', 'draft', 'closed', 'open', '', 'politica-de-privacidade', '', '', '2019-02-12 16:25:14', '2019-02-12 18:25:14', '', 0, 'http://avaliacao.test/?page_id=3', 0, 'page', '', 0),
 	(5, 1, '2019-02-13 13:08:53', '2019-02-13 15:08:53', '', 'Contato', '', 'publish', 'closed', 'closed', '', 'contato', '', '', '2019-03-31 15:38:27', '2019-03-31 18:38:27', '', 0, 'http://avaliacao.test/?page_id=5', 0, 'page', '', 0),
@@ -2093,7 +2093,7 @@ INSERT IGNORE INTO `egddy_posts` (`ID`, `post_author`, `post_date`, `post_date_g
 	(6894, 1, '2019-10-19 15:01:20', '2019-10-19 18:01:20', '<!-- wp:paragraph -->\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dolor impedit soluta perspiciatis fugiat! Iusto commodi blanditiis voluptate praesentium eos labore libero saepe reiciendis.</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>quia nostrum quo, dicta quis molestiae dolorem dolore vitae harum inventore illum, ex? Similique autem perspiciatis vitae est, aliquid perferendis alias quod sint ullam ea blanditiis velit esse cumque minima consequatur quia omnis laboriosam illo. Doloribus vero exercitationem fuga deserunt ex accusantium deleniti molestiae quibusdam quidem error eos eum et, veniam laborum obcaecati modi, iure rerum laboriosam, nisi omnis facere. Obcaecati, animi.</p>\n<!-- /wp:paragraph -->', 'Dolore vitae harum inventore illum, ex?', '', 'inherit', 'closed', 'closed', '', '6892-revision-v1', '', '', '2019-10-19 15:01:20', '2019-10-19 18:01:20', '', 6892, 'http://avaliacao.test/6892-revision-v1/', 0, 'revision', '', 0),
 	(6895, 1, '2022-03-23 10:38:28', '0000-00-00 00:00:00', '', 'Rascunho automÃ¡tico', '', 'auto-draft', 'open', 'open', '', '', '', '', '2022-03-23 10:38:28', '0000-00-00 00:00:00', '', 0, 'http://avaliacao.test/?p=6895', 0, 'post', '', 0);
 
--- Copiando estrutura para tabela dump.egddy_termmeta
+-- Copiando estrutura para tabela avaliacao.egddy_termmeta
 CREATE TABLE IF NOT EXISTS `egddy_termmeta` (
   `meta_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint unsigned NOT NULL DEFAULT '0',
@@ -2104,7 +2104,7 @@ CREATE TABLE IF NOT EXISTS `egddy_termmeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=59 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_termmeta: ~22 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_termmeta: ~22 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_value`) VALUES
 	(1, 8, 'icone', '113'),
 	(2, 8, '_icone', 'field_5c9cc7ac5e7f1'),
@@ -2129,7 +2129,7 @@ INSERT IGNORE INTO `egddy_termmeta` (`meta_id`, `term_id`, `meta_key`, `meta_val
 	(57, 241, 'titulo', 'comunicaÃ§Ã£o'),
 	(58, 241, '_titulo', 'field_5d1e09f7e488b');
 
--- Copiando estrutura para tabela dump.egddy_terms
+-- Copiando estrutura para tabela avaliacao.egddy_terms
 CREATE TABLE IF NOT EXISTS `egddy_terms` (
   `term_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(200) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -2141,7 +2141,7 @@ CREATE TABLE IF NOT EXISTS `egddy_terms` (
   KEY `name` (`name`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=257 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_terms: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_terms: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_terms` (`term_id`, `name`, `slug`, `term_group`, `term_order`) VALUES
 	(2, 'menu-topo-pt', 'menu-topo-pt', 0, 0),
 	(3, 'EspaÃ±ol', 'es', 2, 0),
@@ -2208,7 +2208,7 @@ INSERT IGNORE INTO `egddy_terms` (`term_id`, `name`, `slug`, `term_group`, `term
 	(249, 'Categoria espanhol', 'categoria-espanhol', 0, 0),
 	(250, 'pll_5ce84b6901cea', 'pll_5ce84b6901cea', 0, 0);
 
--- Copiando estrutura para tabela dump.egddy_term_relationships
+-- Copiando estrutura para tabela avaliacao.egddy_term_relationships
 CREATE TABLE IF NOT EXISTS `egddy_term_relationships` (
   `object_id` bigint unsigned NOT NULL DEFAULT '0',
   `term_taxonomy_id` bigint unsigned NOT NULL DEFAULT '0',
@@ -2217,7 +2217,7 @@ CREATE TABLE IF NOT EXISTS `egddy_term_relationships` (
   KEY `term_taxonomy_id` (`term_taxonomy_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_term_relationships: ~300 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_term_relationships: ~300 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_term_relationships` (`object_id`, `term_taxonomy_id`, `term_order`) VALUES
 	(1, 4, 0),
 	(1, 5, 0),
@@ -2520,7 +2520,7 @@ INSERT IGNORE INTO `egddy_term_relationships` (`object_id`, `term_taxonomy_id`, 
 	(6890, 8, 0),
 	(6892, 8, 0);
 
--- Copiando estrutura para tabela dump.egddy_term_taxonomy
+-- Copiando estrutura para tabela avaliacao.egddy_term_taxonomy
 CREATE TABLE IF NOT EXISTS `egddy_term_taxonomy` (
   `term_taxonomy_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `term_id` bigint unsigned NOT NULL DEFAULT '0',
@@ -2533,7 +2533,7 @@ CREATE TABLE IF NOT EXISTS `egddy_term_taxonomy` (
   KEY `taxonomy` (`taxonomy`)
 ) ENGINE=InnoDB AUTO_INCREMENT=257 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_term_taxonomy: ~64 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_term_taxonomy: ~64 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxonomy`, `description`, `parent`, `count`) VALUES
 	(2, 2, 'nav_menu', '', 0, 11),
 	(3, 3, 'language', 'a:3:{s:6:"locale";s:5:"es_ES";s:3:"rtl";i:0;s:9:"flag_code";s:2:"es";}', 0, 20),
@@ -2600,7 +2600,7 @@ INSERT IGNORE INTO `egddy_term_taxonomy` (`term_taxonomy_id`, `term_id`, `taxono
 	(249, 249, 'categoria-portfolio', '', 0, 1),
 	(250, 250, 'term_translations', 'a:1:{s:2:"es";i:249;}', 0, 1);
 
--- Copiando estrutura para tabela dump.egddy_usermeta
+-- Copiando estrutura para tabela avaliacao.egddy_usermeta
 CREATE TABLE IF NOT EXISTS `egddy_usermeta` (
   `umeta_id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `user_id` bigint unsigned NOT NULL DEFAULT '0',
@@ -2611,7 +2611,7 @@ CREATE TABLE IF NOT EXISTS `egddy_usermeta` (
   KEY `meta_key` (`meta_key`(191))
 ) ENGINE=InnoDB AUTO_INCREMENT=89 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_usermeta: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_usermeta: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_value`) VALUES
 	(1, 1, 'nickname', 'suporte'),
 	(2, 1, 'first_name', ''),
@@ -2657,7 +2657,7 @@ INSERT IGNORE INTO `egddy_usermeta` (`umeta_id`, `user_id`, `meta_key`, `meta_va
 	(87, 1, 'egddy_media_library_mode', 'list'),
 	(88, 1, 'upload_per_page', '200');
 
--- Copiando estrutura para tabela dump.egddy_users
+-- Copiando estrutura para tabela avaliacao.egddy_users
 CREATE TABLE IF NOT EXISTS `egddy_users` (
   `ID` bigint unsigned NOT NULL AUTO_INCREMENT,
   `user_login` varchar(60) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL DEFAULT '',
@@ -2675,11 +2675,11 @@ CREATE TABLE IF NOT EXISTS `egddy_users` (
   KEY `user_email` (`user_email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_users: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_users: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_users` (`ID`, `user_login`, `user_pass`, `user_nicename`, `user_email`, `user_url`, `user_registered`, `user_activation_key`, `user_status`, `display_name`) VALUES
 	(1, 'suporte', '$P$Byu6JQaWOTvENGFJYBmP0/uTH5rCEB.', 'suporte', 'atendimentosomadev@gmail.com', '', '2019-02-12 18:25:09', '', 0, 'suporte');
 
--- Copiando estrutura para tabela dump.egddy_yoast_seo_links
+-- Copiando estrutura para tabela avaliacao.egddy_yoast_seo_links
 CREATE TABLE IF NOT EXISTS `egddy_yoast_seo_links` (
   `id` bigint unsigned NOT NULL AUTO_INCREMENT,
   `url` varchar(255) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_520_ci NOT NULL,
@@ -2690,7 +2690,7 @@ CREATE TABLE IF NOT EXISTS `egddy_yoast_seo_links` (
   KEY `link_direction` (`post_id`,`type`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2729 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_yoast_seo_links: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_yoast_seo_links: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_yoast_seo_links` (`id`, `url`, `post_id`, `target_post_id`, `type`) VALUES
 	(253, 'http://localhost/~djalmatoledo/organa', 189, 0, 'external'),
 	(254, 'http://localhost/~djalmatoledo/organa/wp-content/uploads/2019/03/001.jpg', 189, 0, 'internal'),
@@ -3618,7 +3618,7 @@ INSERT IGNORE INTO `egddy_yoast_seo_links` (`id`, `url`, `post_id`, `target_post
 	(2727, 'http://localhost/~djalmatoledo/organa/wp-content/uploads/2019/03/007.jpg', 187, 0, 'internal'),
 	(2728, 'http://localhost/~djalmatoledo/organa/wp-content/uploads/2019/03/008.jpg', 187, 0, 'internal');
 
--- Copiando estrutura para tabela dump.egddy_yoast_seo_meta
+-- Copiando estrutura para tabela avaliacao.egddy_yoast_seo_meta
 CREATE TABLE IF NOT EXISTS `egddy_yoast_seo_meta` (
   `object_id` bigint unsigned NOT NULL,
   `internal_link_count` int unsigned DEFAULT NULL,
@@ -3626,7 +3626,7 @@ CREATE TABLE IF NOT EXISTS `egddy_yoast_seo_meta` (
   UNIQUE KEY `object_id` (`object_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_520_ci;
 
--- Copiando dados para a tabela dump.egddy_yoast_seo_meta: ~0 rows (aproximadamente)
+-- Copiando dados para a tabela avaliacao.egddy_yoast_seo_meta: ~0 rows (aproximadamente)
 INSERT IGNORE INTO `egddy_yoast_seo_meta` (`object_id`, `internal_link_count`, `incoming_link_count`) VALUES
 	(1, 0, 0),
 	(2, 0, 0),
