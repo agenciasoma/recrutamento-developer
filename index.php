@@ -3,8 +3,24 @@ $botao = 'Continue lendo';
 ?>
 <?php
 	global $wpdb;
-	// $posts = $wpdb->get_results("SELECT * FROM egddy_posts WHERE post_type = 'BLOG' AND post_date > '2019-09-10 00:00:00' AND post_date < '2019-09-20 00:00:00' AND post_status = 'free'");
-	$posts = $wpdb->get_results("SELECT * FROM egddy_posts WHERE post_date > '2019-09-10 00:00:00' AND post_date < '2019-09-20 00:00:00'");
+
+	$categorySlug = 'blog';
+	$startDate = '2019-09-10';
+	$endDate = '2019-09-20';
+	$metaValue = 'free';
+
+	$query = $wpdb->prepare("
+		SELECT $wpdb->posts.*
+		FROM $wpdb->posts
+		INNER JOIN $wpdb->term_relationships ON ($wpdb->posts.ID = $wpdb->term_relationships.object_id)
+		INNER JOIN $wpdb->terms ON ($wpdb->term_relationships.term_taxonomy_id = $wpdb->terms.term_id)
+		INNER JOIN $wpdb->postmeta ON ($wpdb->posts.ID = $wpdb->postmeta.post_id)
+		WHERE $wpdb->terms.slug = %s
+		AND $wpdb->posts.post_date >= %s
+		AND $wpdb->posts.post_date <= %s
+		AND $wpdb->postmeta.meta_value = %s
+		ORDER BY $wpdb->posts.post_date DESC
+	");
 ?>
 <div class="container-page">
 	<div class="header-page" style="background: url('<?php bloginfo('template_url'); ?>/src/images/bg-blog.jpg') no-repeat center center;background-size: cover;">
@@ -28,8 +44,7 @@ $botao = 'Continue lendo';
 								<div class="wrapper">
 									<div class="category">
 										<?php
-											$post_type = ucfirst(substr($post->post_type, 0, 1));
-											echo $post_type . substr($post->post_type, 1);
+											echo date("d/m/Y", strtotime($post->post_date));
 										?>
 									</div>
 									<div class="text">
