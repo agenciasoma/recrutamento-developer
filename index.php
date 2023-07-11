@@ -4,23 +4,23 @@ $botao = 'Continue lendo';
 <?php
 	global $wpdb;
 
-	$categorySlug = 'blog';
-	$startDate = '2019-09-10';
-	$endDate = '2019-09-20';
-	$metaValue = 'free';
-
 	$query = $wpdb->prepare("
-		SELECT $wpdb->posts.*
-		FROM $wpdb->posts
-		INNER JOIN $wpdb->term_relationships ON ($wpdb->posts.ID = $wpdb->term_relationships.object_id)
-		INNER JOIN $wpdb->terms ON ($wpdb->term_relationships.term_taxonomy_id = $wpdb->terms.term_id)
-		INNER JOIN $wpdb->postmeta ON ($wpdb->posts.ID = $wpdb->postmeta.post_id)
-		WHERE $wpdb->terms.slug = %s
-		AND $wpdb->posts.post_date >= %s
-		AND $wpdb->posts.post_date <= %s
-		AND $wpdb->postmeta.meta_value = %s
-		ORDER BY $wpdb->posts.post_date DESC
-	");
+		SELECT p.*
+		FROM {$wpdb->posts} AS p
+		INNER JOIN {$wpdb->term_relationships} AS tr ON p.ID = tr.object_id
+		INNER JOIN {$wpdb->term_taxonomy} AS tt ON tr.term_taxonomy_id = tt.term_taxonomy_id
+		INNER JOIN {$wpdb->terms} AS t ON tt.term_id = t.term_id
+		LEFT JOIN {$wpdb->postmeta} AS pm ON p.ID = pm.post_id
+		WHERE p.post_type = 'post'
+		AND p.post_status = 'publish'
+		AND t.slug = 'blog'
+		AND p.post_date >= %s
+		AND p.post_date <= %s
+		AND (pm.meta_key = 'status' AND pm.meta_value = 'free')
+		ORDER BY p.post_date DESC
+	", '2019-09-10', '2019-09-20');
+	
+	$posts = $wpdb->get_results($query);
 ?>
 <div class="container-page">
 	<div class="header-page" style="background: url('<?php bloginfo('template_url'); ?>/src/images/bg-blog.jpg') no-repeat center center;background-size: cover;">
