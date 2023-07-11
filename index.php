@@ -20,7 +20,7 @@ $botao = 'Continue lendo';
 		ORDER BY p.post_date DESC
 	", '2019-09-10', '2019-09-20');
 	
-	$posts = $wpdb->get_results($query);
+	$posts = array_unique($wpdb->get_results($query), SORT_REGULAR);
 ?>
 <div class="container-page">
 	<div class="header-page" style="background: url('<?php bloginfo('template_url'); ?>/src/images/bg-blog.jpg') no-repeat center center;background-size: cover;">
