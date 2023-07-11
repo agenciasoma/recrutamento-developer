@@ -40,7 +40,7 @@ Siga as etapas abaixo para realizar a avaliação e chegar ao objetivo final.
 2. Crie uma nova branch com seu nome para iniciar os trabalhos.
 4. Crie um banco de dados MySQL, importe o DUMP que se encontra na pasta *BD*.
 5. Com o banco de dados criado e importado, realize a instalação do WordPress. Lembrando que o prefixo da tabela do banco é "egddy_".
-6 . Acesse o painel do wordpress para certificar se está conectando com o banco de dados que foi importado. Lembrando que WP armazena a url no banco, então não esqueça de verificar se a url está de acordo com a sua instalação.
+6. Acesse o painel do wordpress para certificar se está conectando com o banco de dados que foi importado. Lembrando que WP armazena a url no banco, então não esqueça de verificar se a url está de acordo com a sua instalação.
 7. Utilize o usuário abaixo para se autenticar no painel administrativo do WordPress:
 ```
 Usuário: suporte
@@ -54,8 +54,8 @@ Senha: recrutamento
     - Posts onde o campo personalizado "status" esteja definido como "free"
 11. Com o conteúdo sendo retornado do banco, exiba a informação de acordo com a estrutura html/css já criada no arquivo index.php e disponível na home do tema conforme [layout](https://prnt.sc/A4I5ItEbpZ0b);
 12. Após realizar todas as tarefas acima, crie um DUMP do banco de dados com seu nome e adicione na pasta BD.
-13. Faça o commit e envie o novo branch criado para o repositório no github.
-14. Com o novo branch enviado faça um Pull Request descrevendo o que foi realizado. Para mais dicas sobre como criar o pull request acesse [este link](https://juliobitencourt.dev/como-criar-um-pull-request-perfeito/)
+13. Faça o commit e envie a nova branch criado para o repositório no github.
+14. Com a nova branch enviado faça um Pull Request descrevendo o que foi realizado. Para mais dicas sobre como criar o pull request acesse [este link](https://juliobitencourt.dev/como-criar-um-pull-request-perfeito/)
 
 ## Agradecimentos
 
