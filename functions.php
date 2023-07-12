@@ -10,8 +10,6 @@ function somadev_setup() {
 
 add_action( 'after_setup_theme', 'somadev_setup' );
 
-// Este tema suporta miniaturas
-
 add_theme_support( 'post-thumbnails' );
 
 function somadev_page_menu_args( $args ) {

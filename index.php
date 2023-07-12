@@ -1,113 +1,161 @@
-<?php get_header();
+<?php
+get_header();
 $botao = 'Continue lendo';
 ?>
 <div class="container-page">
-	<div class="header-page" style="background: url('<?php bloginfo('template_url'); ?>/src/images/bg-blog.jpg') no-repeat center center;background-size: cover;">
-		<div class="center">
-			<img src="<?php bloginfo('template_url'); ?>/src/images/icone-blog.png">
-			<h1 class="title">Blog</h1>
-		</div>
-	</div>
-	<div class="content-page">
-		<div class="center-small">
-			<div class="top-itens">
-				<div class="center-small">
-					<div class="col">
-						<div class="item">
-							<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" title="Blanditiis velit esse cumque minima consequatur">
-								<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-post-big.jpg">
-							</a>
-							<div class="wrapper">
-								<div class="category">
-									Blog
-								</div>
-								<div class="text">
-									<h2 class="title">
-										<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" title="Blanditiis velit esse cumque minima consequatur">Blanditiis velit esse cumque minima consequatur</a>
-									</h2>
-									<div class="text-mobile">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dol...</p>
-									</div>
-									<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" class="link-more" title="Continue lendo Blanditiis velit esse cumque minima consequatur">Continue lendo</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="item item-small">
-							<a href="./atque-enim-consectetur-quod/" title="Atque enim consectetur quod">
-								<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-post-small.jpg">
-							</a>
-							<div class="wrapper">
-								<div class="category">
-									Blog
-								</div>
-								<div class="text">
-									<h2 class="title">
-										<a href="./atque-enim-consectetur-quod/" title="Atque enim consectetur quod">Atque enim consectetur quod</a>
-									</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non dolorem, a consequatur debitis voluptas accusantium veritatis. Itaque officia veniam maiores commodi, atque enim...</p>
-									<a href="./atque-enim-consectetur-quod/" class="link-more" title="Continue lendo Atque enim consectetur quod">Continue lendo</a>
-								</div>
-							</div>
-						</div>
-						<div class="item item-small">
-							<a href="./lorem-ipsum-dolor-sit-amet/" title="Lorem ipsum dolor sit amet">
-								<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-post-small.jpg">
-							</a>
-							<div class="wrapper">
-								<div class="category">
-									Blog
-								</div>
-								<div class="text">
-									<h2 class="title">
-										<a href="./lorem-ipsum-dolor-sit-amet/" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
-									</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non dolorem, a consequatur debitis voluptas accusantium veritatis. Itaque officia veniam maiores commodi, atque enim...</p>
-									<a href="./lorem-ipsum-dolor-sit-amet/" class="link-more" title="Continue lendo Lorem ipsum dolor sit amet">Continue lendo</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="itens-post">
-				<div class="item">
-					<div class="wrapper">
-						<div class="image">
-							<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-big.jpg">
-						</div>
-						<div class="text">
-							<h2>
-								<a href="#" title="novo teste de conteúdo">novo teste de conteúdo</a>
-							</h2>
-							<span class="icons-post icon-date">
-								<i class="icon-calendar"></i>18.07.2019
-							</span>
-							<a href="#" class="icons-post icon-coment-count">
-								<i class="icon-comment-alt"></i>0
-							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusantium repudiandae aperiam dolorem error consequatur harum nam distinctio, voluptates mollitia excepturi fac</p>
-							<a class="link-more" href="#" title="novo teste de conteúdo">Continue lendo</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="wrapper">
-						<div class="image">
-							<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-big.jpg">
-						</div>
-						<div class="text">
-							<h2><a href="#" title="Dolor impedit soluta perspiciatis fugiat">Dolor impedit soluta perspiciatis fugiat</a></h2>
-							<span class="icons-post icon-date"><i class="icon-calendar"></i>17.07.2019</span>
-							<a href="#" class="icons-post icon-coment-count"><i class="icon-comment-alt"></i>0</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dolor </p>
-							<a class="link-more" href="#" title="Dolor impedit soluta perspiciatis fugiat">Continue lendo</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    <div class="header-page" style="background: url('<?php bloginfo('template_url'); ?>/src/images/bg-blog.jpg') no-repeat center center;background-size: cover;">
+        <div class="center">
+            <img src="<?php bloginfo('template_url'); ?>/src/images/icone-blog.png">
+            <h1 class="title">Blog</h1>
+        </div>
+    </div>
+    <div class="center-small">
+        <?php
+        $args = array(
+            'category_name'   => 'BLOG',
+            'date_query'      => array(
+                array(
+                    'after'     => '2019-09-10',
+                    'before'    => '2019-09-20',
+                    'inclusive' => true,
+                ),
+            ),
+            'meta_query'      => array(
+                array(
+                    'key'     => 'status',
+                    'value'   => 'free',
+                    'compare' => '=',
+                ),
+            ),
+            'posts_per_page'  => 8,
+        );
+
+        $query = new WP_Query($args);
+
+        if ($query->have_posts()) {
+            $post_count = 0;
+            $col_count  = 0;
+            $first_post = null;
+            $small_posts = array();
+            $itens_posts = array();
+
+            while ($query->have_posts()) {
+                $query->the_post();
+                if ($post_count === 0) {
+                    $first_post = get_post();
+                } elseif ($post_count <= 2) {
+                    $small_posts[] = get_post();
+                } else {
+                    $itens_posts[] = get_post();
+                }
+                $post_count++;
+            }
+
+            if ($first_post) {
+                setup_postdata($first_post);
+        ?>
+                <div class="content-page">
+                    <div class="center-small">
+                        <div class="top-itens">
+                            <div class="center-small">
+                                <div class="col">
+                                    <div class="item">
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                            <?php the_post_thumbnail(); ?>
+                                        </a>
+                                        <div class="wrapper">
+                                            <div class="category">
+                                                <?php the_category(); ?>
+                                            </div>
+                                            <div class="text">
+                                                <h2 class="title">
+                                                    <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                                </h2>
+                                                <div class="text-mobile">
+                                                    <?php the_excerpt(); ?>
+                                                </div>
+                                                <a href="<?php the_permalink(); ?>" class="link-more" title="Continue lendo <?php the_title_attribute(); ?>"><?php echo $botao; ?></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <?php
+
+                                    foreach ($small_posts as $post) {
+                                        setup_postdata($post);
+                                    ?>
+                                        <div class="item item-small">
+                                            <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                                <?php the_post_thumbnail(); ?>
+                                            </a>
+                                            <div class="wrapper">
+                                                <div class="category">
+                                                    <?php the_category(); ?>
+                                                </div>
+                                                <div class="text">
+                                                    <h2 class="title">
+                                                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                                    </h2>
+                                                    <p><?php the_excerpt(); ?></p>
+                                                    <a href="<?php the_permalink(); ?>" class="link-more" title="Continue lendo <?php the_title_attribute(); ?>"><?php echo $botao; ?></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <?php
+                                    }
+                                    ?>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <?php
+            }
+
+
+            if (!empty($itens_posts)) {
+            ?>
+                <div class="itens-post">
+                    <?php
+                    foreach ($itens_posts as $post) {
+                        setup_postdata($post);
+                    ?>
+                        <div class="item">
+                            <div class="wrapper">
+                                <div class="image">
+                                    <?php the_post_thumbnail(); ?>
+                                </div>
+                                <div class="text">
+                                    <h2>
+                                        <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
+                                    </h2>
+                                    <span class="icons-post icon-date">
+                                        <i class="icon-calendar"></i><?php the_date(); ?>
+                                    </span>
+                                    <a href="<?php the_permalink(); ?>" class="icons-post icon-coment-count">
+                                        <i class="icon-comment-alt"></i><?php comments_number('0', '1', '%'); ?>
+                                    </a>
+                                    <p><?php the_excerpt(); ?></p>
+                                    <a class="link-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php echo $botao; ?></a>
+                                </div>
+                            </div>
+                        </div>
+                    <?php
+                    }
+                    ?>
+                </div>
+        <?php
+            }
+        } else {
+            echo 'Nenhum post encontrado.';
+        }
+
+        wp_reset_postdata();
+        ?>
+    </div>
 </div>
-<?php get_footer(); ?>
+
+<?php
+get_footer();
+?>
