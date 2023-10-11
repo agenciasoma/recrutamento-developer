@@ -92,3 +92,46 @@ function add_cpt_to_pll( $post_types, $is_settings ) {
     }
     return $post_types;
 }
+
+// Criei um shortcode personalizado para exibir posts da categoria "BLOG" com critérios específicos.
+function custom_blog_posts_shortcode($atts) {
+    $atts = shortcode_atts(array(
+        'category' => 'BLOG',
+        'start_date' => '2019-09-10',
+        'end_date' => '2019-09-20',
+    ), $atts);
+
+    $args = array(
+        'post_type' => 'post',
+        'category_name' => $atts['category'],
+        'date_query' => array(
+            'after' => $atts['start_date'],
+            'before' => $atts['end_date'],
+        ),
+        'meta_query' => array(
+            array(
+                'key' => 'status',
+                'value' => 'free',
+                'compare' => '=',
+            ),
+        ),
+    );
+
+    $query = new WP_Query($args);
+
+    ob_start();
+    
+    if ($query->have_posts()) {
+        while ($query->have_posts()) {
+            $query->the_post();
+            // Aqui você pode formatar a exibição dos posts, por exemplo: the_title(), the_content(), etc.
+        }
+    } else {
+        echo 'Nenhum post correspondente encontrado.';
+    }
+
+    wp_reset_postdata(); // Restaura a consulta original
+
+    return ob_get_clean();
+}
+add_shortcode('custom_blog_posts', 'custom_blog_posts_shortcode');
