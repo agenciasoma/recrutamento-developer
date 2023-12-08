@@ -12,101 +12,86 @@ $botao = 'Continue lendo';
 		<div class="center-small">
 			<div class="top-itens">
 				<div class="center-small">
-					<div class="col">
-						<div class="item">
-							<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" title="Blanditiis velit esse cumque minima consequatur">
-								<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-post-big.jpg">
-							</a>
-							<div class="wrapper">
-								<div class="category">
-									Blog
-								</div>
-								<div class="text">
-									<h2 class="title">
-										<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" title="Blanditiis velit esse cumque minima consequatur">Blanditiis velit esse cumque minima consequatur</a>
-									</h2>
-									<div class="text-mobile">
-										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dol...</p>
-									</div>
-									<a href="./blanditiis-velit-esse-cumque-minima-consequatur/" class="link-more" title="Continue lendo Blanditiis velit esse cumque minima consequatur">Continue lendo</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col">
-						<div class="item item-small">
-							<a href="./atque-enim-consectetur-quod/" title="Atque enim consectetur quod">
-								<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-post-small.jpg">
-							</a>
-							<div class="wrapper">
-								<div class="category">
-									Blog
-								</div>
-								<div class="text">
-									<h2 class="title">
-										<a href="./atque-enim-consectetur-quod/" title="Atque enim consectetur quod">Atque enim consectetur quod</a>
-									</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non dolorem, a consequatur debitis voluptas accusantium veritatis. Itaque officia veniam maiores commodi, atque enim...</p>
-									<a href="./atque-enim-consectetur-quod/" class="link-more" title="Continue lendo Atque enim consectetur quod">Continue lendo</a>
-								</div>
-							</div>
-						</div>
-						<div class="item item-small">
-							<a href="./lorem-ipsum-dolor-sit-amet/" title="Lorem ipsum dolor sit amet">
-								<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-post-small.jpg">
-							</a>
-							<div class="wrapper">
-								<div class="category">
-									Blog
-								</div>
-								<div class="text">
-									<h2 class="title">
-										<a href="./lorem-ipsum-dolor-sit-amet/" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a>
-									</h2>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea non dolorem, a consequatur debitis voluptas accusantium veritatis. Itaque officia veniam maiores commodi, atque enim...</p>
-									<a href="./lorem-ipsum-dolor-sit-amet/" class="link-more" title="Continue lendo Lorem ipsum dolor sit amet">Continue lendo</a>
-								</div>
-							</div>
-						</div>
-					</div>
+					<?php
+						$args = ['category_name' => 'BLOG',
+								'date_query' => [
+										['day' => 10, 'mouth' => 9, 'year' => 2019, 'compare' => '>=', 'day' => 20, 'mouth' => 9, 'year' => 2019, 'compare' => '<=']
+									],
+								'meta_key' => 'status',
+								'meta_value' => 'free'
+								];
+						$the_query = new WP_Query( $args );
+						if ($the_query->have_posts()){
+							$postCount = 0;
+							while ( $the_query->have_posts() ) {
+								$the_query->the_post();
+								if ($postCount < 3) {
+									if ($postCount == 0 || $postCount % 2 != 0){
+										echo '<div class="col">';
+									}
+										if ($postCount == 0){
+											echo '<div class="item">';
+										}
+										else{
+											echo '<div class="item item-small">';
+										}
+											echo '<a href="'. get_the_permalink() .'" title="'. get_the_title() .'">';
+												echo '<img src="'. get_the_post_thumbnail();
+											echo '</a>';
+											echo '<div class="wrapper">';
+												echo '<div class="category">';
+													echo 'Blog';
+												echo '</div>';
+												echo '<div class="text">';
+													echo '<h2 class="title">';
+														echo '<a href="'. get_the_permalink() .'" title="'. get_the_title() .'">'. get_the_title() .'</a>';
+													echo '</h2>';
+													echo '<div class="text-mobile">';
+														echo '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dol...</p>';
+													echo '</div>';
+														echo '<a href="'. get_the_permalink() .'"  class="link-more" title="'. get_the_title() .'">Continue lendo</a>';
+													echo '</div>';
+											echo '</div>';
+										echo '</div>';
+										if ($postCount == 0 || $postCount % 2 == 0){
+											echo '</div>';
+										}
+								}
+								else{
+									if ($postCount == 3) {
+											echo '</div>';
+										echo '</div>';
+										echo '<div class="itens-post">';
+									}
+									echo '<div class="item">';
+										echo '<div class="wrapper">';
+											echo '<div class="image">';
+												echo '<img src="'. get_the_post_thumbnail();
+											echo '</div>';
+										echo '<div class="text">';
+											echo '<h2>';
+												echo '<a href="'. get_the_permalink() .'" title="'. get_the_title() .'">'. get_the_title() .'</a>';
+											echo '</h2>';
+											echo '<span class="icons-post icon-date">';
+												echo '<i class="icon-calendar"></i>'. get_the_date('d.m.Y');
+											echo '</span>';
+											echo '<a href="'. apply_filters('get_comments_link', get_the_permalink().'#comments', $post) .'" class="icons-post icon-coment-count">';
+												echo '<i class="icon-comment-alt"></i>' . comments_number(false,false,false, $post);
+											echo '</a>';
+											echo '<p>'. substr(get_the_content(), 0, 180) .'</p>';
+											echo '<a class="link-more" href="'. get_the_permalink() .'" title="novo teste de conteúdo">Continue lendo</a>';
+										echo '</div>';
+									echo '</div>';
+								echo '</div>';
+								}
+								$postCount++;
+							}
+						}
+						else {
+							echo 'no posts found';
+						}
+					?>
 				</div>
-			</div>
-			<div class="itens-post">
-				<div class="item">
-					<div class="wrapper">
-						<div class="image">
-							<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-big.jpg">
-						</div>
-						<div class="text">
-							<h2>
-								<a href="#" title="novo teste de conteúdo">novo teste de conteúdo</a>
-							</h2>
-							<span class="icons-post icon-date">
-								<i class="icon-calendar"></i>18.07.2019
-							</span>
-							<a href="#" class="icons-post icon-coment-count">
-								<i class="icon-comment-alt"></i>0
-							</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci accusantium repudiandae aperiam dolorem error consequatur harum nam distinctio, voluptates mollitia excepturi fac</p>
-							<a class="link-more" href="#" title="novo teste de conteúdo">Continue lendo</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<div class="wrapper">
-						<div class="image">
-							<img src="./wp-content/themes/somadev-theme-master/src/images/no-thumb-big.jpg">
-						</div>
-						<div class="text">
-							<h2><a href="#" title="Dolor impedit soluta perspiciatis fugiat">Dolor impedit soluta perspiciatis fugiat</a></h2>
-							<span class="icons-post icon-date"><i class="icon-calendar"></i>17.07.2019</span>
-							<a href="#" class="icons-post icon-coment-count"><i class="icon-comment-alt"></i>0</a>
-							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam delectus sed molestias deserunt. Assumenda illum eum placeat cum repellat quisquam cumque doloribus distinctio, dolor </p>
-							<a class="link-more" href="#" title="Dolor impedit soluta perspiciatis fugiat">Continue lendo</a>
-						</div>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 </div>
